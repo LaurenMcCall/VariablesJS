@@ -14,3 +14,9 @@ console.table(aboutMe)
 const userName = window.prompt('What is your name?')
 // QUESTION: why is userName not same color as above interpolation?
 console.log('Hello, ${userName}')
+
+// ------------Converting string input from the user-----------
+const firstNumber = window.prompt('Enter a number.')
+const secondNumber = window.prompt('Enter another number.')
+const firstOperand = Number(firstNumber)
+const secondOperand = Number(secondNumber)
