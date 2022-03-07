@@ -80,3 +80,18 @@ const stats = {
   average: average,
 }
 console.log(stats)
+
+// ----------------Adventure Mode--------------
+const findOdds = numbers.filter(function (number) {
+  return number % 2 != 0
+})
+console.log(findOdds)
+
+const sumOfOdds = findOdds.reduce((sumOfOdds, number) => sumOfOdds + number, 0)
+console.log(sumOfOdds)
+
+// QUESTION: Is there a better refractored way to do this?
+const countOfEven = numbers.filter(function (number) {
+  return number % 2 === 0
+})
+console.log(countOfEven.length)
